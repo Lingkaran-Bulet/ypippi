@@ -1,2 +1,4 @@
 /vendor
 /user_guide
+
+application/wsfront/config/autoload.php
