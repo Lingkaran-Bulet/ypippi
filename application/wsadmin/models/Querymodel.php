@@ -266,7 +266,7 @@ class Querymodel extends  CI_Model {
 		foreach($_FILES as $name => $value){
 			if(isset($value['size']) && $value['size'] > 0){
 			
-				$path = $this->path_image['path_thumb_images'].$this->path_pict;
+				$path = $this->path_image['path_thumb_images'].$this->path_pict.$id.'/';
 				
 				if(!is_dir($path)){
 					mkdir($path, 0777);
@@ -329,7 +329,7 @@ class Querymodel extends  CI_Model {
 			$config = array(
 				'image_library' => 'gd2',
 				'source_image' => $image_data['full_path'],
-				'new_image' => $this->path_image['path_thumb_images'].$this->path_pict.$expl[0].'_'.$id.'_'.$number.'.'.$expl[1],
+				'new_image' => $this->path_image['path_thumb_images'].$this->path_pict.$id.'/'.$expl[0].'_'.$id.'_'.$number.'.'.$expl[1],
 				'maintain_ration' => true,
 				'width' => $this->__config['width'],
 				'height' => $this->__config['height']
@@ -345,7 +345,7 @@ class Querymodel extends  CI_Model {
 			$config_thumb = array(
 				'image_library' => 'gd2',
 				'source_image' => $image_data['full_path'],
-				'new_image' => $this->path_image['path_thumb_images'].$this->path_pict.'thumb_'.$expl[0].'_'.$id.'_'.$number.'.'.$expl[1],
+				'new_image' => $this->path_image['path_thumb_images'].$this->path_pict.$id.'/thumb_'.$expl[0].'_'.$id.'_'.$number.'.'.$expl[1],
 				'maintain_ration' => false,
 				'width' => $this->__config['thumb_width'],
 				'height' => $this->__config['thumb_height']
@@ -361,7 +361,7 @@ class Querymodel extends  CI_Model {
 			$config_zoom = array(
 				'image_library' => 'gd2',
 				'source_image' => $image_data['full_path'],
-				'new_image' => $this->path_image['path_thumb_images'].$this->path_pict.'zoom_'.$expl[0].'_'.$id.'_'.$number.'.'.$expl[1],
+				'new_image' => $this->path_image['path_thumb_images'].$this->path_pict.$id.'/zoom_'.$expl[0].'_'.$id.'_'.$number.'.'.$expl[1],
 				'maintain_ration' => true,
 				'width' => $this->__config['zoom_width'],
 				'height' => $this->__config['zoom_width']
@@ -378,7 +378,7 @@ class Querymodel extends  CI_Model {
 			$config_xtra_zoom = array(
 				'image_library' => 'gd2',
 				'source_image' => $image_data['full_path'],
-				'new_image' => $this->path_image['path_thumb_images'].$this->path_pict.'zoom_xtra_'.$expl[0].'_'.$id.'_'.$number.'.'.$expl[1],
+				'new_image' => $this->path_image['path_thumb_images'].$this->path_pict.$id.'/zoom_xtra_'.$expl[0].'_'.$id.'_'.$number.'.'.$expl[1],
 				'maintain_ration' => true,
 				'width' => $this->__config['zoom_xtra_width'],
 				'height' => $this->__config['zoom_xtra_height']
@@ -436,6 +436,12 @@ class Querymodel extends  CI_Model {
 		foreach($_FILES as $name => $value){
 			if(isset($value['size']) && $value['size'] > 0){
 				
+				$path = $this->path_image['path_thumb_images'].$this->path_pict.$data[$this->id].'/';
+				
+				if(!is_dir($path)){
+					mkdir($path, 0777);
+				}
+
 				$result_cek = $this->cek_upload($name, $type);
 
 				if(!empty($result_cek))  {

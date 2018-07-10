@@ -73,9 +73,29 @@ if ( ! function_exists('url_admin'))
 
 if ( ! function_exists('slug_text'))
 {
-	function slug_text($string)
+	function slug_text($text)
 	{			
-		return str_replace(' ', '-',$string);
+		// replace non letter or digits by -
+	    $text = preg_replace('~[^\\pL\d]+~u', '-', $text);
+	 
+	    // trim
+	    $text = trim($text, '-');
+	 
+	    // transliterate
+	    $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
+	 
+	    // lowercase
+	    $text = strtolower($text);
+	 
+	    // remove unwanted characters
+	    $text = preg_replace('~[^-\w]+~', '', $text);
+	 	
+	    if (empty($text))
+	    {
+	        return 'n-a';
+	    }
+
+	    return $text;
 	}
 }
 

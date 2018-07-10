@@ -24,11 +24,13 @@ class Article extends CI_Controller {
 	public $module = 'article'; //name module
 	public $table = 'ws_article_foo'; //name table
 	public $date_create = 'ws_article_date_create';
+	public $date_update = 'ws_article_date_update';
 	
 	public $id = 'ws_article_id';
 	public $title_input = 'ws_article_title';
 	public $summary_input = 'ws_article_summary';
 	public $desc_input = 'ws_article_desc';
+	public $slug_input = 'ws_article_slug';
 	public $userfile = 'userfile';
 	public $image_upload = 'ws_article_image';
 	public $keyword_input = 'ws_article_keyword';
@@ -262,9 +264,10 @@ class Article extends CI_Controller {
 				if(!empty($metadesc_input)) $data[$this->metadesc_input] = $metadesc_input;				
 				if(!empty($status)) $data[$this->status] = $status;
 				$data[$this->user_create] = $this->session->userdata('username')['ws_user_username'];
+				$data[$this->slug_input] = date('Y/m/d/h/i/s/').slug_text($title_input);
 				
 				if(!empty($data)) $success = $this->querymodel->insertRecord($data, $data_id, $this->table, 'image'); 
-					
+				
 				if(isset($success) && !is_array($success) && empty($success['error'])) {
 					
 					//Insert Log
@@ -349,8 +352,8 @@ class Article extends CI_Controller {
 																							,'set_value' => isset($desc_input) ? $desc_input : ''
 																							,'config_name' =>'ws_article'),
 																						true)
-
-					,'upload' => multiupload($this->count_image, $image, $this->path_pict)
+					
+					,'upload' => multiupload($this->count_image, $image, $this->path_pict.$result[0][$this->id].'/')
 					
 					,'input_tags' => input_box(array('id' => 'form-field-tags'
 													,'placeholder'=>"Enter tags ..."
@@ -422,6 +425,7 @@ class Article extends CI_Controller {
 			
 			if ($this->form_validation->run() == TRUE){
 				
+				$date_update = time();
 				$title_input = $this->security->xss_clean($this->input->post($this->title_input, TRUE));
 				$summary_input = $this->security->xss_clean($this->input->post($this->summary_input, TRUE));
 				$desc_input = $this->security->xss_clean($this->input->post($this->desc_input, TRUE));
@@ -434,6 +438,7 @@ class Article extends CI_Controller {
 
 				$field['field'] = array();
 				
+				if(!empty($date_update)) $data[$this->date_update] = time();
 				if(!empty($title_input)) $data[$this->title_input] = $title_input;
 				if(!empty($summary_input)) $data[$this->summary_input] = $summary_input;
 				if(!empty($desc_input)) $data[$this->desc_input] = $desc_input;
@@ -444,7 +449,8 @@ class Article extends CI_Controller {
 				if(!empty($metadesc_input)) $data[$this->metadesc_input] = $metadesc_input;				
 				$data[$this->status] = $status;
 				$data[$this->user_update] = $this->session->userdata('username')['ws_user_username'];
-				
+				$data[$this->slug_input] = date('Y/m/d/h/i/s/').slug_text($title_input);
+
 				$data_id = $this->id;
 				
 				foreach($_FILES['userfile'] as $key => $val){
