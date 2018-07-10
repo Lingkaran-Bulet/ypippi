@@ -93,7 +93,8 @@ $autoload['helper'] = array('url',
                             'html',
                             'array',
                             'form',
-                            'file'
+                            'file',
+                            'generic'
                           );
 
 

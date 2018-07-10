@@ -179,43 +179,33 @@
             </div>
             <!-- row -->
           </div>
-          <!-- videoArea -->
+          <!-- Berita Terbaru -->
+          <?php if(!empty($article)){ ?>
           <div class="related_post_sec single_post">
             <h3>Berita Terbaru</h3>
             <ul>
+              <?php foreach ($article as $key => $val) { ?>
               <li>
                 <span class="rel_thumb">
-                  <a href="single-post-right-sidebar.html"><img src="<?php echo base_url('assets/wsfront'); ?>/img/news/related_thumb_01.png" alt=""></a>
+                  <a href="<?php echo base_url('read/'.$val['ws_article_slug']); ?>">
+                    <img src="<?php echo base_url('picture/article/'.$val['ws_article_id'].'/'.$val['ws_article_image_path']); ?>" alt="<?php echo $val['ws_article_title']; ?>">
+                  </a>  
                 </span>
                 <!--end rel_thumb-->
                 <div class="rel_right">
-                  <h4><a href="single-post-right-sidebar.html">Lorem Ipsum dolar simt Amet simply dummy Text Lorem Ipsum dolar</a></h4>
+                  <h4><a href="<?php echo base_url('read/'.$val['ws_article_slug']); ?>"><?php echo $val['ws_article_title']; ?></a></h4>
                   <div class="meta">
-                    <span class="author">Posted in: <a href="#">Update</a></span>
-                    <span class="date">on: <a href="#">January 24, 2015</a></span>
+                    <span class="date">create date : <a href="#"><?php echo tanggal_indo(date('d-m-Y',$val['ws_article_date_create']), true); ?></a></span>
                   </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...</p>
+                  <p><?php echo $val['ws_article_summary']; ?></p>
                 </div>
                 <!--end rel right-->
               </li>
-              <li>
-                <span class="rel_thumb">
-                  <a href="single-post-right-sidebar.html"><img src="<?php echo base_url('assets/wsfront'); ?>/img/news/related_thumb_02.jpg" alt=""></a>
-                </span>
-                <!--end rel_thumb-->
-                <div class="rel_right">
-                  <h4><a href="single-post-right-sidebar.html">Lorem Ipsum dolar simt Amet simply dummy Text Lorem Ipsum dolar</a></h4>
-                  <div class="meta">
-                    <span class="author">Posted in: <a href="#">Exam</a></span>
-                    <span class="date">on: <a href="#">January 24, 2015</a></span>
-                  </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...</p>
-                </div>
-                <!--end rel right-->
-              </li>
+              <?php } ?>
             </ul>
           </div>
           <!--related_post_sec-->
+          <?php } ?>
         </div>
         <!--videoNine-->
       </div>
@@ -242,48 +232,30 @@
         </div>
         <!-- formArea -->
         <div class="list_block related_post_sec">
+          <?php if(!empty($event)){ ?>
           <div class="upcoming_events">
             <h3>Event Terbaru</h3>
             <ul>
+              <?php foreach ($event as $key => $val) { ?>
               <li class="related_post_sec single_post">
                 <span class="date-wrapper">
-                  <span class="date"><span>24</span>January</span>
+                  <span class="date"><span><?php echo date('d',$val['ws_event_date_create']); ?></span><?php echo date('F',$val['ws_event_date_create']); ?></span>
                 </span>
                 <div class="rel_right">
-                  <h4><a href="single-events.html">Offered in small class sizes with great emphasis...</a></h4>
+                  <h4 style="height: 60px;"><a href="<?php echo base_url('read/'.$val['ws_event_slug']); ?>"><?php echo $val['ws_event_title']; ?></a></h4>
                   <div class="meta">
+                    <!--
                     <span class="place"><i class="fa fa-map-marker"></i>Main Campus</span>
                     <span class="event-time"><i class="fa fa-clock-o"></i>11.00 pm</span>
+                    -->
                   </div>
                 </div>
               </li>
-              <li class="related_post_sec single_post">
-                <span class="date-wrapper">
-                  <span class="date"><span>24</span>January</span>
-                </span>
-                <div class="rel_right">
-                  <h4><a href="single-events.html">Offered in small class sizes with great emphasis...</a></h4>
-                  <div class="meta">
-                    <span class="place"><i class="fa fa-map-marker"></i>Main Campus</span>
-                    <span class="event-time"><i class="fa fa-clock-o"></i>11.00 pm</span>
-                  </div>
-                </div>
-              </li>
-              <li class="related_post_sec single_post">
-                <span class="date-wrapper">
-                  <span class="date"><span>24</span>January</span>
-                </span>
-                <div class="rel_right">
-                  <h4><a href="single-events.html">Offered in small class sizes with great emphasis...</a></h4>
-                  <div class="meta">
-                    <span class="place"><i class="fa fa-map-marker"></i>Main Campus</span>
-                    <span class="event-time"><i class="fa fa-clock-o"></i>11.00 pm</span>
-                  </div>
-                </div>
-              </li>
+              <?php } ?>
             </ul>
-            <a href="events-3col.html" class="btn btn-default btn-block commonBtn">Selengkapnya</a>
+            <a href="<?php echo base_url('event'); ?>" class="btn btn-default btn-block commonBtn">Selengkapnya</a>
           </div>
+          <?php } ?>
         </div>
         <!-- end list_block -->
       </div>
