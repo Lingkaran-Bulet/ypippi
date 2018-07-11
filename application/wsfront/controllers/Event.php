@@ -11,6 +11,7 @@ class Event extends CI_Controller {
 
   public function index()
   {
+    $data['event'] = $this->Querymodel->getListEvent($limit=3, $start=0);
     $data['content'] = 'event';
     $this->load->view('layout/default', $data); 
   }

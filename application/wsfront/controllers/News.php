@@ -11,7 +11,9 @@ class News extends CI_Controller {
 
 	public function index()
 	{
-		$data['content'] = 'news';
+		$data['article'] = $this->Querymodel->getListArticle($limit=3, $start=0);
+    	
+    	$data['content'] = 'news';
 		$this->load->view('layout/default', $data);
 	}
 

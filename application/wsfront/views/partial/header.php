@@ -104,7 +104,7 @@
                 <li class="">
                   <a href="<?php echo base_url('contact-us'); ?>" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">HUBUNGI KAMI</a>
                 </li>
-                <li class="apply_now"><a href="<?php echo base_url('register'); ?>">Pendaftaran</a></li>
+                <!-- <li class="apply_now"><a href="<?php echo base_url('register'); ?>">Pendaftaran</a></li> -->
               </ul>
             </div>
             <!-- navbar-collapse -->
