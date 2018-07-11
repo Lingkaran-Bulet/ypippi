@@ -173,7 +173,7 @@
               <!-- videoLeft -->
               <div class="col-lg-4 col-md-5 col-xs-12 videoRight">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur ante volutpat sem aliquam lobortis. Mauris porta fermentum volutpat. Praesent est sapien, tincidunt vel arcu vitae, mattis sollicitudin lectus. Mauris porta fermentum volutpat. Praesent est sapien, tincidunt vel arcu vitae, mattis sollicitudin lectus.</p>
-                <a href="about.html" class="btn btn-block learnBtn">Selengkapnya</a>
+                <a href="<?php echo base_url('profile'); ?>" class="btn btn-block learnBtn">Selengkapnya</a>
               </div>
               <!-- videoRight -->
             </div>
