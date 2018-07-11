@@ -105,7 +105,7 @@
       <div class="row">
         <div class="col-xs-6 col-sm-3">
           <div class="aboutImage">
-            <a href="single-course-right-sidebar.html">
+            <a href="<?php echo base_url('education/kurikulum'); ?>">
               <img src="<?php echo base_url('assets/wsfront'); ?>/img/home/learn/learn_1.jpg" alt="" class="img-responsive" />
               <div class="overlay">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur ante volutpat sem aliquam lobortis.</p>
@@ -117,19 +117,19 @@
         </div>
         <div class="col-xs-6 col-sm-3">
           <div class="aboutImage">
-            <a href="single-course-right-sidebar.html">
+            <a href="<?php echo base_url('education/prestasi'); ?>">
               <img src="<?php echo base_url('assets/wsfront'); ?>/img/home/learn/learn_2.jpg" alt="" class="img-responsive" />
               <div class="overlay">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur ante volutpat sem aliquam lobortis.</p>
               </div>
-              <span class="captionLink">FASILITAS<span></span></span>
+              <span class="captionLink">PRESTASI<span></span></span>
             </a>
           </div>
           <!-- aboutImage -->
         </div>
         <div class="col-xs-6 col-sm-3">
           <div class="aboutImage">
-            <a href="single-course-right-sidebar.html">
+            <a href="<?php echo base_url('education/akriditas'); ?>">
               <img src="<?php echo base_url('assets/wsfront'); ?>/img/home/learn/learn_3.jpg" alt="" class="img-responsive" />
               <div class="overlay">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur ante volutpat sem aliquam lobortis.</p>
@@ -141,7 +141,7 @@
         </div>
         <div class="col-xs-6 col-sm-3">
           <div class="aboutImage">
-            <a href="single-course-right-sidebar.html">
+            <a href="<?php echo base_url('education/program'); ?>">
               <img src="<?php echo base_url('assets/wsfront'); ?>/img/home/learn/learn_4.jpg" alt="" class="img-responsive" />
               <div class="overlay">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur ante volutpat sem aliquam lobortis.</p>
@@ -430,7 +430,7 @@
         </div>
 
         <div class="btnArea text-center">
-          <a href="" class="btn btn-default commonBtn">View more</a>
+          <a href="<?php echo base_url('fasilitas'); ?>" class="btn btn-default commonBtn">Selengkapnya</a>
         </div>
       </div>
     </section>
