@@ -54,4 +54,14 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['home'] = 'home';
-$Router['profil'] = 'profil';
+$route['profile'] = 'profile';
+$route['gallery'] = 'gallery';
+$route['contact-us'] = 'contact';
+$route['news'] = 'news';
+$route['event'] = 'event';
+$route['branch'] = 'branch';
+$route['register'] = 'register';
+$route['fasilitas'] = 'fasilitas';
+$route['education/program'] = 'education/program';
+$route['education/kurikulum'] = 'education/kurikulum';
+$route['education/akriditas'] = 'education/akriditas';
