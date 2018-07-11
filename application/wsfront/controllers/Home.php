@@ -12,11 +12,15 @@ class Home extends CI_Controller {
   public function index()
   {
     
-    $data['article'] = $this->Querymodel->getListArticle($limit=2, $start=0);
+    $data['article'] = $this->Querymodel->getListArticle($limit=3, $start=0);
     $data['event'] = $this->Querymodel->getListEvent($limit=3, $start=0);
     
     $data['content'] = 'home';
     $this->load->view('layout/default', $data);
+  }
+
+  public function details() {
+
   }
 
 }
