@@ -64,7 +64,7 @@
               <div class="collapse navbar-collapse" id="main-nav">
                 <ul class="nav navbar-nav navbar-right">
                   <li class="active">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+                    <a href="<?php echo base_url('home'); ?>" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
                   </li>
                   <li class="dropdown">
                     <a href="<?php echo base_url('profile'); ?>" class="dropdown-toggle">PROFIL</a>
@@ -75,8 +75,8 @@
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CABANG</a>
                         <ul class="dropdown-menu">
-                          <li><a href="photo-gallery3col.html">JAKARTA</a></li>
-                          <li><a href="photo-gallery4col.html">BEKASI</a></li>
+                          <li><a href="<?php echo base_url('branch'); ?>">JAKARTA</a></li>
+                          <li><a href="<?php echo base_url('branch'); ?>">BEKASI</a></li>
                         </ul>
                       </li>
                     </ul>
@@ -84,18 +84,18 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PENDIDIKAN</a>
                   <ul class="dropdown-menu">
-                    <li><a href="about.html">PROGRAM</a></li>
-                    <li><a href="about.html">KURIKULUM</a></li>
-                    <li><a href="about.html">PRESTASI</a></li>
+                    <li><a href="<?php echo base_url('education/program'); ?>">PROGRAM</a></li>
+                    <li><a href="<?php echo base_url('education/kurikulum'); ?>">KURIKULUM</a></li>
+                    <li><a href="<?php echo base_url('education/prestasi'); ?>">PRESTASI</a></li>
                   </ul>
                 </li>
                 <li class="">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FASILITAS</a>
+                  <a href="<?php echo base_url('fasilitas'); ?>" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">FASILITAS</a>
                 </li>
                 <li class="dropdown">
                   <a href="<?php echo base_url('news'); ?>" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">BERITA</a>
                   <ul class="dropdown-menu">
-                    <li><a href="events-3col.html">EVENT</a></li>
+                    <li><a href="<?php echo base_url('event'); ?>">EVENT</a></li>
                   </ul>
                 </li>
                 <li class="">
@@ -104,7 +104,7 @@
                 <li class="">
                   <a href="<?php echo base_url('contact-us'); ?>" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">HUBUNGI KAMI</a>
                 </li>
-                <li class="apply_now"><a href="buying-steps.html">Pendaftaran</a></li>
+                <li class="apply_now"><a href="<?php echo base_url('register'); ?>">Pendaftaran</a></li>
               </ul>
             </div>
             <!-- navbar-collapse -->
