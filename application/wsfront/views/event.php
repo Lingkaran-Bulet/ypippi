@@ -2,107 +2,136 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-8 post_left">
-        <div class="upcoming_events event-col">
-          <div class="row clearfix">
-            <div class="col-xs-6 col-sm-6">
-              <div class="related_post_sec single_post">
-                <span class="date-wrapper">
-                  <span class="date"><span>24</span>January</span>
-                </span>
-                <div class="rel_right">
-                  <h4><a href="single-events.html">Lorem Ipsum dolar simt Amet simply dummy Text Lorem Ipsum dolar</a></h4>
-                  <div class="meta">
-                    <span class="place"><i class="fa fa-map-marker"></i>Main Campus</span>
-                    <span class="event-time"><i class="fa fa-clock-o"></i>11.00 pm</span>
-                  </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...</p>
-                  <a href="single-events.html" class="btn btn-default commonBtn">view Detals</a>
-                </div>
-              </div>
+        <div class="post_left_section post_left_border">
+          <div class="post">
+            <div class="post_thumb">
+              <img src="<?php echo base_url('assets/wsfront'); ?>/img/news/news-post-01.jpg" alt="" />
             </div>
-            <div class="col-xs-6 col-sm-6">
-              <div class="related_post_sec single_post">
-                <span class="date-wrapper">
-                  <span class="date"><span>24</span>January</span>
-                </span>
-                <div class="rel_right">
-                  <h4><a href="single-events.html">Lorem Ipsum dolar simt Amet simply dummy Text Lorem Ipsum dolar</a></h4>
-                  <div class="meta">
-                    <span class="place"><i class="fa fa-map-marker"></i>Main Campus</span>
-                    <span class="event-time"><i class="fa fa-clock-o"></i>11.00 pm</span>
-                  </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...</p>
-                  <a href="single-events.html" class="btn btn-default commonBtn">view Detals</a>
-                </div>
-              </div>
+            <!--end post thumb-->
+            <div class="meta">
+              <span class="author">By: <a href="single-post-right-sidebar.html">Alexandra Jenmi</a></span>
+              <span class="category"> <a href="single-post-right-sidebar.html">Indesign</a></span>
+              <span class="date">Posted: <a href="single-post-right-sidebar.html">January 24, 2015</a></span>
             </div>
-            <div class="col-xs-6 col-sm-6">
-              <div class="related_post_sec single_post">
-                <span class="date-wrapper">
-                  <span class="date"><span>24</span>January</span>
-                </span>
-                <div class="rel_right">
-                  <h4><a href="single-events.html">Lorem Ipsum dolar simt Amet simply dummy Text Lorem Ipsum dolar</a></h4>
-                  <div class="meta">
-                    <span class="place"><i class="fa fa-map-marker"></i>Main Campus</span>
-                    <span class="event-time"><i class="fa fa-clock-o"></i>11.00 pm</span>
-                  </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...</p>
-                  <a href="" class="btn btn-default commonBtn">view Detals</a>
-                </div>
-              </div>
+            <!--end meta-->
+            <h1><a href="single-post-right-sidebar.html">Incredible standard post Image</a></h1>
+            <div class="post_desc">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse...</p>
             </div>
-            <div class="col-xs-6 col-sm-6">
-              <div class="related_post_sec single_post">
-                <span class="date-wrapper">
-                  <span class="date"><span>24</span>January</span>
-                </span>
-                <div class="rel_right">
-                  <h4><a href="single-events.html">Lorem Ipsum dolar simt Amet simply dummy Text Lorem Ipsum dolar</a></h4>
-                  <div class="meta">
-                    <span class="place"><i class="fa fa-map-marker"></i>Main Campus</span>
-                    <span class="event-time"><i class="fa fa-clock-o"></i>11.00 pm</span>
-                  </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...</p>
-                  <a href="" class="btn btn-default commonBtn">view Detals</a>
-                </div>
-              </div>
+            <!--end post desc-->
+            <div class="post_bottom">
+              <ul>
+                <li class="like">
+                  <a href="#">
+                    <img src="<?php echo base_url('assets/wsfront'); ?>/img/news/like_icon.png" alt="" />
+                    <span>12</span>
+                  </a>
+                </li>
+                <li class="share">
+                  <a href="#">
+                    <img src="<?php echo base_url('assets/wsfront'); ?>/img/news/share_icon.png" alt="" />
+                    <span>12</span>
+                  </a>
+                </li>
+                <li class="favorite">
+                  <a href="#">
+                    <img src="<?php echo base_url('assets/wsfront'); ?>/img/news/favorite_icon.png" alt="" />
+                    <span>12</span>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <div class="col-xs-6 col-sm-6">
-              <div class="related_post_sec single_post">
-                <span class="date-wrapper">
-                  <span class="date"><span>24</span>January</span>
-                </span>
-                <div class="rel_right">
-                  <h4><a href="single-events.html">Lorem Ipsum dolar simt Amet simply dummy Text Lorem Ipsum dolar</a></h4>
-                  <div class="meta">
-                    <span class="place"><i class="fa fa-map-marker"></i>Main Campus</span>
-                    <span class="event-time"><i class="fa fa-clock-o"></i>11.00 pm</span>
-                  </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...</p>
-                  <a href="single-events.html" class="btn btn-default commonBtn">view Detals</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-6 col-sm-6">
-              <div class="related_post_sec single_post">
-                <span class="date-wrapper">
-                  <span class="date"><span>24</span>January</span>
-                </span>
-                <div class="rel_right">
-                  <h4><a href="single-events.html">Lorem Ipsum dolar simt Amet simply dummy Text Lorem Ipsum dolar</a></h4>
-                  <div class="meta">
-                    <span class="place"><i class="fa fa-map-marker"></i>Main Campus</span>
-                    <span class="event-time"><i class="fa fa-clock-o"></i>11.00 pm</span>
-                  </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...</p>
-                  <a href="single-events.html" class="btn btn-default commonBtn">view Detals</a>
-                </div>
-              </div>
-            </div>
+            <!--end post bottom-->
           </div>
-          <!-- row clearfix -->
+          <!--end post-->
+          <div class="post">
+            <div class="post_thumb">
+              <img src="<?php echo base_url('assets/wsfront'); ?>/img/news/news-post-02.jpg" alt="" />
+            </div>
+            <!--end post thumb-->
+            <div class="meta">
+              <span class="author">By: <a href="#">Alexandra Jenmi</a></span>
+              <span class="category"> <a href="#">Indesign</a></span>
+              <span class="date">Posted: <a href="#">January 24, 2015</a></span>
+            </div>
+            <!--end meta-->
+            <h1><a href="single-news.html">Incredible standard post Image</a></h1>
+            <div class="post_desc">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse...</p>
+            </div>
+            <!--end post desc-->
+            <div class="post_bottom">
+              <ul>
+                <li class="like">
+                  <a href="#">
+                    <img src="<?php echo base_url('assets/wsfront'); ?>/img/news/like_icon.png" alt="" />
+                    <span>12</span>
+                  </a>
+                </li>
+                <li class="share">
+                  <a href="#">
+                    <img src="<?php echo base_url('assets/wsfront'); ?>/img/news/share_icon.png" alt="" />
+                    <span>12</span>
+                  </a>
+                </li>
+                <li class="favorite">
+                  <a href="#">
+                    <img src="<?php echo base_url('assets/wsfront'); ?>/img/news/favorite_icon.png" alt="" />
+                    <span>12</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!--end post bottom-->
+          </div>
+          <!--end post-->
+          <div class="post">
+            <div class="post_thumb">
+              <img src="<?php echo base_url('assets/wsfront'); ?>/img/news/news-post-03.jpg" alt="" />
+            </div>
+            <!--end post thumb-->
+            <div class="meta">
+              <span class="author">By: <a href="single-post-right-sidebar.html">Alexandra Jenmi</a></span>
+              <span class="category"> <a href="single-post-right-sidebar.html">Indesign</a></span>
+              <span class="date">Posted: <a href="single-post-right-sidebar.html">January 24, 2015</a></span>
+            </div>
+            <!--end meta-->
+            <h1><a href="single-post-right-sidebar.html">Incredible standard post Image</a></h1>
+            <div class="post_desc">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse...</p>
+            </div>
+            <!--end post desc-->
+            <div class="post_bottom">
+              <ul>
+                <li class="like">
+                  <a href="#">
+                    <img src="<?php echo base_url('assets/wsfront'); ?>/img/news/like_icon.png" alt="" />
+                    <span>12</span>
+                  </a>
+                </li>
+                <li class="share">
+                  <a href="#">
+                    <img src="<?php echo base_url('assets/wsfront'); ?>/img/news/share_icon.png" alt="" />
+                    <span>12</span>
+                  </a>
+                </li>
+                <li class="favorite">
+                  <a href="#">
+                    <img src="<?php echo base_url('assets/wsfront'); ?>/img/news/favorite_icon.png" alt="" />
+                    <span>12</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!--end post bottom-->
+          </div>
+          <!--end post-->
+          <ul class="pagination_section">
+            <li><a href="#">Older News</a></li>
+          </ul>
+          <!--end pagination section-->
         </div>
+        <!--end post left section-->
       </div>
       <!--end post_left-->
       <div class="col-xs-12 col-sm-4 post_right">
@@ -113,7 +142,7 @@
               <ul>
                 <li>
                   <span class="rel_thumb">
-                    <img src="<?php echo base_url('assets/wsfront') ?>/img/news/rel_thumb.png" alt="" />
+                    <img src="<?php echo base_url('assets/wsfront'); ?>/img/news/rel_thumb.png" alt="" />
                   </span>
                   <!--end rel_thumb-->
                   <div class="rel_right">
@@ -124,57 +153,57 @@
                 </li>
                 <li>
                   <span class="rel_thumb">
-                    <img src="<?php echo base_url('assets/wsfront') ?>/img/news/rel_thumb.png" alt="" />
+                    <img src="<?php echo base_url('assets/wsfront'); ?>/img/news/rel_thumb.png" alt="" />
                   </span>
                   <!--end rel_thumb-->
                   <div class="rel_right">
                     <a href="single-post-right-sidebar.html"><h4>Offered in small class sizes with great emphasis...</h4></a>
-                    <span class="date">Posted: <a href="#">January 24, 2015</a></span>
+                    <span class="date">Posted: <a href="single-post-right-sidebar.html">January 24, 2015</a></span>
                   </div>
                   <!--end rel right-->
                 </li>
                 <li>
                   <span class="rel_thumb">
-                    <img src="<?php echo base_url('assets/wsfront') ?>/img/news/rel_thumb.png" alt="" />
+                    <img src="<?php echo base_url('assets/wsfront'); ?>/img/news/rel_thumb.png" alt="" />
                   </span>
                   <!--end rel_thumb-->
                   <div class="rel_right">
                     <a href="single-post-right-sidebar.html"><h4>Offered in small class sizes with great emphasis...</h4></a>
-                    <span class="date">Posted: <a href="#">January 24, 2015</a></span>
+                    <span class="date">Posted: <a href="single-post-right-sidebar.html">January 24, 2015</a></span>
                   </div>
                   <!--end rel right-->
                 </li>
                 <li>
                   <span class="rel_thumb">
-                    <img src="<?php echo base_url('assets/wsfront') ?>/img/news/rel_thumb.png" alt="" />
+                    <img src="<?php echo base_url('assets/wsfront'); ?>/img/news/rel_thumb.png" alt="" />
                   </span>
                   <!--end rel_thumb-->
                   <div class="rel_right">
                     <a href="single-post-right-sidebar.html"><h4>Offered in small class sizes with great emphasis...</h4></a>
-                    <span class="date">Posted: <a href="#">January 24, 2015</a></span>
+                    <span class="date">Posted: <a href="single-post-right-sidebar.html">January 24, 2015</a></span>
                   </div>
                   <!--end rel right-->
                 </li>
                 <li>
                   <span class="rel_thumb">
-                    <img src="<?php echo base_url('assets/wsfront') ?>/img/news/rel_thumb.png" alt="" />
+                    <img src="<?php echo base_url('assets/wsfront'); ?>/img/news/rel_thumb.png" alt="" />
                   </span>
                   <!--end rel_thumb-->
                   <div class="rel_right">
                     <a href="single-post-right-sidebar.html"><h4>Offered in small class sizes with great emphasis...</h4></a>
-                    <span class="date">Posted: <a href="#">January 24, 2015</a></span>
+                    <span class="date">Posted: <a href="single-post-right-sidebar.html">January 24, 2015</a></span>
                   </div>
                   <!--end rel right-->
                 </li>
               </ul>
-              <a href="blog-right-sidebar.html" class="more_post">More</a>
+              <a href="#" class="more_post">More</a>
             </div>
             <div class="list_block">
               <div class="formTitle news">
                 <h3 class="extraPadding">"Getting into..." University Guides</h3>
                 <p class="reduceMargin">Offered in small class sizes with great emphasis on the demands of the specification and exam technique.</p>
                 <div class="getImage clearfix">
-                  <img alt="" src="<?php echo base_url('assets/wsfront') ?>/img/home/get_image_1.png" />
+                  <img alt="" src="<?php echo base_url('assets/wsfront'); ?>/img/home/get_image_1.png" />
                 </div>
                 <!-- getImage -->
                 <button class="btn btn-default btn-block commonBtn" type="submit">Get It Now</button>
@@ -199,8 +228,6 @@
       </div>
       <!--end post_right-->
     </div>
-    <!-- row -->
   </div>
-  <!-- container -->
 </div>
-<!-- post_section -->
+<!--end post section-->
