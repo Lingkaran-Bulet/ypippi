@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home Default - Royal College</title>
+  <title>SMP - SMA - SMK IT YP IPPI JAKARTA</title>
 
   <!-- PLUGINS CSS STYLE -->
   <link rel="icon" type="image/png" href="img/favicon.png">
