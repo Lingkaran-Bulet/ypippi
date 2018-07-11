@@ -55,14 +55,15 @@
 </div>
 <!--end content top-->
 <!-- DARK SECTION -->
-<div class="padding clearfix paralax" style="background-image: url(assets/wsfront/img/home/paralax/paralax01.jpg);">
+<div id="motto" class="padding clearfix paralax" style="background-image: url(assets/wsfront/img/home/paralax/paralax01.jpg);">
   <div class="container">
     <div class="paralax-text text-center paralaxInner">
       <h2>Motto Kami</h2>
       <p>Donec congue consequat risus, nec volutpat enim tempus id. Proin et sapien eget diam ullamcorper consectetur. Sed blandit imperdiet mauris. Mauris eleifend faucibus ipsum quis varius. Quisque pharetra leo erat, non eleifend nibh interdum quis.</p>
-      </div><!-- row -->
     </div>
+    <!-- row -->
   </div>
+</div>
 <div class="content_bottom clearfix">
   <div class="container">
     <div class="row">
@@ -73,6 +74,51 @@
         </div>
       </div>
     </div>
+    
+    <div class="row">
+      <div class="col-xs-12">
+        <ul class="list">
+          <li>
+            <a href="#">
+              <div class="thumb">
+                <img src="assets/wsfront/img/stuff/member/1.png" alt="" />
+              </div>
+              <h3>John Doe</h3>
+              <h5>Teacher</h5>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="thumb">
+                <img src="assets/wsfront/img/stuff/member/2.png" alt="" />
+              </div>
+              <h3>John Doe</h3>
+              <h5>Teacher</h5>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="thumb">
+                <img src="assets/wsfront/img/stuff/member/3.png" alt="" />
+              </div>
+              <h3>John Doe</h3>
+              <h5>Teacher</h5>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="thumb">
+                <img src="assets/wsfront/img/stuff/member/4.png" alt="" />
+              </div>
+              <h3>John Doe</h3>
+              <h5>Teacher</h5>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--end col-xs-12-->
+    </div>
+    <!--end row-->
   </div>
   <!--end container-->
 </div>

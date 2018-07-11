@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-class Profil extends CI_Controller {
+class Profile extends CI_Controller {
   public function __construct()
   {
     parent::__construct();
@@ -8,7 +8,7 @@ class Profil extends CI_Controller {
   }
   public function index()
   {
-    $data['content'] = 'profil';
+    $data['content'] = 'profile';
     $this->load->view('layout/default', $data);
   }
 }

@@ -67,7 +67,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
                   </li>
                   <li class="dropdown">
-                    <a href="<?php echo base_url('profil'); ?>" class="dropdown-toggle">PROFIL</a>
+                    <a href="<?php echo base_url('profile'); ?>" class="dropdown-toggle">PROFIL</a>
                     <ul class="dropdown-menu">
                       <!-- <li><a href="course-grid-3col.html">SEJARAH</a></li>
                       <li><a href="course-grid-3col.html">VISI &amp; MISI</a></li>
@@ -93,16 +93,16 @@
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FASILITAS</a>
                 </li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">BERITA</a>
+                  <a href="<?php echo base_url('news'); ?>" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">BERITA</a>
                   <ul class="dropdown-menu">
                     <li><a href="events-3col.html">EVENT</a></li>
                   </ul>
                 </li>
                 <li class="">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">GALERI</a>
+                  <a href="<?php echo base_url('gallery'); ?>" class="dropdown-toggle"  role="button" aria-haspopup="true" aria-expanded="false">GALERI</a>
                 </li>
                 <li class="">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HUBUNGI KAMI</a>
+                  <a href="<?php echo base_url('contact-us'); ?>" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">HUBUNGI KAMI</a>
                 </li>
                 <li class="apply_now"><a href="buying-steps.html">Pendaftaran</a></li>
               </ul>
