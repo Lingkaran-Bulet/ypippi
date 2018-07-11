@@ -66,7 +66,7 @@
                     <a href="index.html" class="navbar-brand">
                         <small>
                             <i class="fa fa-leaf"></i>
-                            Ace Admin
+                            YPIPPI Admin
                         </small>
                     </a>
                 </div>

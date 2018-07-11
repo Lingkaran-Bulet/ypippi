@@ -12,6 +12,8 @@ class Errornotfound extends CI_Controller {
 	
 	function index($null = null, $page = null){
 		
+		if($this->session->userdata('username') == FALSE) login_page(); //cek session
+
 		$forms['block_form'] = $this->load->view('module/error/block_list', array(), true);
 		$forms['title'] = 'Page Not Found';
 		$forms['iconadd'] = false;
@@ -20,6 +22,8 @@ class Errornotfound extends CI_Controller {
 	}
 	
 	function template($form, $view){
+		
+		if($this->session->userdata('username') == FALSE) login_page(); //cek session
 		
 		$data_ex['module'] = $this->module; 
 
