@@ -58,7 +58,7 @@
 <div class="padding clearfix paralax" style="background-image: url(assets/wsfront/img/home/paralax/paralax01.jpg);">
   <div class="container">
     <div class="paralax-text text-center paralaxInner">
-      <h2>Motto Kamiiii</h2>
+      <h2>Motto Kami</h2>
       <p>Donec congue consequat risus, nec volutpat enim tempus id. Proin et sapien eget diam ullamcorper consectetur. Sed blandit imperdiet mauris. Mauris eleifend faucibus ipsum quis varius. Quisque pharetra leo erat, non eleifend nibh interdum quis.</p>
       </div><!-- row -->
     </div>
