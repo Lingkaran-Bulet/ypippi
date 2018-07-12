@@ -39,7 +39,7 @@
 				<div class="post_right_inner">
 					<div class="related_post_sec">
 						<div class="list_block">
-							<h3>Latest News</h3>
+							<h3>Latest Newsss</h3>
 							<ul>
 								<li>
 									<span class="rel_thumb">
