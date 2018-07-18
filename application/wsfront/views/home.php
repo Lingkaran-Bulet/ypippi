@@ -187,13 +187,13 @@
               <?php foreach ($article as $key => $val) { ?>
               <li>
                 <span class="rel_thumb">
-                  <a href="<?php echo base_url('read/'.$val['ws_article_slug']); ?>">
+                  <a href="<?php echo base_url('news/read/'.$val['ws_article_slug']); ?>">
                     <img src="<?php echo base_url('picture/article/'.$val['ws_article_id'].'/'.$val['ws_article_image_path']); ?>" alt="<?php echo $val['ws_article_title']; ?>">
                   </a>  
                 </span>
                 <!--end rel_thumb-->
                 <div class="rel_right">
-                  <h4><a href="<?php echo base_url('read/'.$val['ws_article_slug']); ?>"><?php echo $val['ws_article_title']; ?></a></h4>
+                  <h4><a href="<?php echo base_url('news/read/'.$val['ws_article_slug']); ?>"><?php echo $val['ws_article_title']; ?></a></h4>
                   <div class="meta">
                     <span class="date">create date : <a href="#"><?php echo tanggal_indo(date('d-m-Y',$val['ws_article_date_create']), true); ?></a></span>
                   </div>
@@ -242,7 +242,7 @@
                   <span class="date"><span><?php echo date('d',$val['ws_event_date_create']); ?></span><?php echo date('F',$val['ws_event_date_create']); ?></span>
                 </span>
                 <div class="rel_right">
-                  <h4 style="height: 60px;"><a href="<?php echo base_url('read/'.$val['ws_event_slug']); ?>"><?php echo $val['ws_event_title']; ?></a></h4>
+                  <h4 style="height: 60px;"><a href="<?php echo base_url('event/read/'.$val['ws_event_slug']); ?>"><?php echo $val['ws_event_title']; ?></a></h4>
                   <div class="meta">
                     <!--
                     <span class="place"><i class="fa fa-map-marker"></i>Main Campus</span>
