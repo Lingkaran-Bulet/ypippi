@@ -28,7 +28,7 @@
 							</div>
 							<?php }?>
 						<?php }?>
-							
+
 						</div><!--end post left section-->
 					</div>
 			<!--end post_left-->
@@ -107,6 +107,7 @@
 								<button class="btn btn-default btn-block commonBtn" type="submit">Get It Now</button>
 							</div>
 						</div>
+						<!--
 						<div class="list_block">
 							<div class="newsletter">
 								<h3>Newsletter</h3>
@@ -118,6 +119,7 @@
 								</form>
 							</div>
 						</div>
+						-->
 						<!-- formArea -->
 					</div>
 					<!--end related_post_sec-->
