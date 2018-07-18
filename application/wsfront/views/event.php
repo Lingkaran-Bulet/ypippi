@@ -29,11 +29,9 @@
             <?php }?>
           <?php }?>
           <!--end post-->
-          <!--
           <ul class="pagination_section">
-            <li><a href="#">Older News</a></li>
+            <li><a href="#">1</a></li>
           </ul>
-          -->
           <!--end pagination section-->
         </div>
         <!--end post left section-->

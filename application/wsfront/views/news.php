@@ -3,6 +3,7 @@
 		<div class="row">
 			<div class="col-xs-12 col-sm-8 post_left">
 						<div class="post_left_section post_left_border">
+
 						<?php if(!empty($article)){ ?>
 							<?php foreach ($article as $key => $val) { ?>
 							<div class="post">
@@ -28,6 +29,10 @@
 							</div>
 							<?php }?>
 						<?php }?>
+
+						<ul class="pagination_section">
+			            	<li><a href="#">1</a></li>
+			          	</ul>
 
 						</div><!--end post left section-->
 					</div>
