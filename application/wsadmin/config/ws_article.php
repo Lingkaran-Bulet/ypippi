@@ -26,8 +26,8 @@ $config['zoom_width'] =  321;
 $config['zoom_height']	= 328;
 
 //setting image zoom width & height	
-$config['zoom_xtra_width'] =  600;
-$config['zoom_xtra_height']	= 400;
+$config['zoom_xtra_width'] =  770;
+$config['zoom_xtra_height']	= 450;
 
 
 //tiny mce editor

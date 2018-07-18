@@ -65,6 +65,7 @@ $route['fasilitas'] = 'fasilitas';
 $route['education/program'] = 'education/program';
 $route['education/kurikulum'] = 'education/kurikulum';
 $route['education/akriditas'] = 'education/akriditas';
+$route['(news|event)/read/(.*)'] = 'detail/index/$1/$2';
 
 if($this->uri->segment(1) != 'home') {
   $route[$this->uri->segment(1)] = 'welcome';

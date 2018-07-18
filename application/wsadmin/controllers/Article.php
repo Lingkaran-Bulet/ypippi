@@ -449,8 +449,7 @@ class Article extends CI_Controller {
 				if(!empty($metadesc_input)) $data[$this->metadesc_input] = $metadesc_input;				
 				$data[$this->status] = $status;
 				$data[$this->user_update] = $this->session->userdata('username')['ws_user_username'];
-				$data[$this->slug_input] = date('Y/m/d/h/i/s/').slug_text($title_input);
-
+				
 				$data_id = $this->id;
 				
 				foreach($_FILES['userfile'] as $key => $val){

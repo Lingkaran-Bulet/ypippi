@@ -1,3 +1,4 @@
+<?php if(!empty($detail)){ ?>
 <div class="post_section">
 	<div class="container">
 		<div class="row">
@@ -5,25 +6,15 @@
 				<div class="post_left_section post_left_border">
 					<div class="post single_post">
 						<div class="post_thumb">
-							<img src="<?php echo base_url('assets/wsfront'); ?>/img/news/thumb_01.jpg" alt="" />
+							<img src="<?php echo base_url('picture/event/'.$detail[0]['ws_event_id'].'/zoom_xtra_'.$detail[0]['image'][0]['ws_event_image_path']); ?>" alt="" />
 						</div>
 						<!--end post thumb-->
 						<div class="meta">
-							<span class="author">By: <a href="#">Alexandra Jenmi</a></span>
-							<span class="category"> <a href="#">Indesign</a></span>
-							<span class="date">Posted: <a href="#">January 24, 2015</a></span>
+							<span class="date">Posted : <a href="#"><?php echo tanggal_indo(date('d-m-Y',$detail[0]['ws_event_date_create']), true); ?></a></span>
 						</div>
 						<!--end meta-->
-						<h1>Incredible standard post Image</h1>
-						<div class="post_desc">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-							<div class="block_quate">
-								<p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt”</p>
-							</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-							<p>mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed</p>
-							<p>quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-						</div>
+						<h1><?php echo $detail[0]['ws_event_title']; ?></h1>
+						<div class="post_desc"><?php echo $detail[0]['ws_event_desc']; ?></div>
 						<!--end post desc-->
 						<div class="post_bottom">
 							<ul>
@@ -322,6 +313,7 @@
 						<!--end facebook section-->
 					</div>
 					<!-- end list_block -->
+					<!--
 					<div class="list_block">
 						<div class="newsletter">
 							<h3>Newsletter</h3>
@@ -332,8 +324,8 @@
 								<button type="submit" class="btn btn-default btn-block commonBtn">Subscribe</button>
 							</form>
 						</div>
-						<!-- end newsletter -->
 					</div>
+					-->
 					<!-- end list_block -->
 				</div>
 				<!--end related_post_sec-->
@@ -343,3 +335,4 @@
 	</div>
 </div>
 <!--end post section-->
+<?php } ?>

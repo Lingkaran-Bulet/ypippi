@@ -306,6 +306,7 @@ class Querymodel extends  CI_Model {
 		$img_type = isset($param['type']) ? $param['type'] : '';
 		$number = isset($param['number']) ? $param['number'] : '';
 		$table = isset($param['table']) ? $param['table'] : '';
+		$edit = isset($param['edit']) ? $param['edit'] : false;
 		
 		$expl = explode('/', $img_type);
 		// $image = array($img => $expl[0].'_'.$id.'_'.$number.'.'.$expl[1]);
@@ -317,7 +318,11 @@ class Querymodel extends  CI_Model {
 					,$field_name => $id
 				);
 
-		$result = $this->db->insert($table, $data); 
+		if($edit){
+			$result = true;
+		}else{
+			$result = $this->db->insert($table, $data);
+		} 
 		
 		/* Insert Image */
 		if(!empty($result)){
@@ -438,9 +443,9 @@ class Querymodel extends  CI_Model {
 				
 				$path = $this->path_image['path_thumb_images'].$this->path_pict.$data[$this->id].'/';
 				
-				if(!is_dir($path)){
-					mkdir($path, 0777);
-				}
+				// if(!is_dir($path)){
+				// 	mkdir($path, 0777);
+				// }
 
 				$result_cek = $this->cek_upload($name, $type);
 
@@ -457,7 +462,8 @@ class Querymodel extends  CI_Model {
 									'id' => $data[$this->id],
 									'img' => $this->image_upload.'_'.$value['number'],
 									'type' => $value['type'],
-									'number' => $value['number']);
+									'number' => $value['number'],
+									'edit' => true);
 						
 						$this->__insertImage($param);
 					

@@ -22,7 +22,7 @@
           </ul>
         </div>
         <!-- col-sm-3 col-xs-6 -->
-        <div class="col-sm-3 col-xs-6 borderLeft">
+        <div class="col-sm-3 col-xs-6 borderLeft"> 
           <div class="footer-address">
             <h5>Location:</h5>
             <address>

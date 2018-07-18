@@ -53,6 +53,38 @@ class Querymodel extends  CI_Model {
     	return $result;
     }
 
+    public function getDetail($table, $slug){
+    	
+    	$result = array();
+    	$this->db->select('*');	
+    	$this->db->where('ws_'.$table.'_status_publish', '1');	
+    	$this->db->where('ws_'.$table.'_slug', $slug);	
+    	$query = $this->db->get('ws_'.$table.'_foo');
+		
+		if ($query->num_rows() > 0)
+		{
+			$result = $query->result_array();
+			$id = $result[0]['ws_'.$table.'_id'];
+    		$result[0]['image'] = $this->__getImage($table, $id);
+    	}
+
+    	return $result;
+    }
+    
+    function __getImage($table, $id){
+    	$result = array();
+    	$this->db->select('ws_'.$table.'_image_path');	
+    	$this->db->where('ws_'.$table.'_id', $id);	
+    	$query = $this->db->get('ws_'.$table.'_image');
+		
+		if ($query->num_rows() > 0)
+		{
+			$result = $query->result_array();
+    	}
+
+    	return $result;
+    }
+
 	function count_all_num_rows($table){
 	
 		return $this->db->count_all($table);
