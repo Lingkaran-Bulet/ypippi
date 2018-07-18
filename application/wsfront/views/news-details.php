@@ -154,7 +154,7 @@
 					<!-- end list_block -->
 					<div class="list_block">
 						<div class="upcoming_events">
-							<h3>Upcoming Events</h3>
+							<h3>Event Lainnya</h3>
 							<ul>
 								<li class="related_post_sec single_post">
 									<span class="date-wrapper">

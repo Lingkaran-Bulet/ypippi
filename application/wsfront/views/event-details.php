@@ -80,112 +80,6 @@
 							</li>
 						</ul>
 					</div>
-					<!--end single_post-->
-					<div class="comments_section">
-						<div class="comment_post">
-							<h3>Comments</h3>
-							<div class="comment_header">
-								<ul>
-									<li class="comment_count">1 comment</li>
-									<li class="comment_favorite_count"><i class="fa fa-star"></i> <span>0</span></li>
-								</ul>
-							</div>
-							<!--end comment header-->
-							<form class="reply" action="#" method="post">
-								<div class="postbox">
-									<div class="avatar">
-										<span class="user">
-											<img alt="Avatar" src="<?php echo base_url('assets/wsfront'); ?>/img/news/avatar.png" />
-										</span>
-									</div>
-									<div class="comments_field">
-										<input type="text" class="form-control comments" placeholder="Leave a message...">
-									</div>
-									<!--end comments field-->
-								</div>
-								<!--end postbox-->
-								<div id="post_list">
-									<div class="comment_tools">
-										<ul>
-											<li class="sort"><a href="#">Best <i class="fa fa-caret-down"></i></a></li>
-											<li class="community"><a href="#">Community</a></li>
-											<li class="setting"><a href="#"><img src="<?php echo base_url('assets/wsfront'); ?>/img/news/setting.png" alt="" /> <i class="fa fa-caret-down"></i></a></li>
-											<li class="share"><a href="#">Share <i class="fa fa-share-square-o"></i></a></li>
-										</ul>
-									</div>
-									<!--end comment tools-->
-									<div class="post-content" data-role="post-content">
-										<div class="avatar">
-											<span class="user">
-												<img alt="Avatar" src="<?php echo base_url('assets/wsfront'); ?>/img/news/avatar.png" />
-											</span>
-										</div>
-										<div class="post-body">
-											<div class="post-top">
-												<span class="post-byline">
-													<span class="author publisher-anchor-color"><a href="#">Gavin Hoffman</a></span>
-												</span>
-												<span class="post-meta">
-													<a  href="#">5 hours ago</a>
-												</span>
-											</div>
-											<!--end post-top-->
-											<div class="post-body-inner">
-												<div  class="post-message">
-													<p>I loving this DISQUS PSD - so easy to edit to see what my design looks like before I install :)</p>
-												</div>
-											</div>
-											<!--end post-body-inner-->
-											<ul class="comment_footer">
-												<li data-role="voting" class="voting">
-													<a  href="#">
-														<span class="control left"><i class="fa fa-angle-up"></i></span>
-													</a>
-													<span title="Vote down" data-action="downvote" class="vote-down  count-1" role="button">
-														<span class="control"><i class="fa fa-angle-down"></i></span>
-													</span>
-												</li>
-												<li data-role="reply-link" class="reply">
-													<a data-action="reply" href="#">Reply</a>
-												</li>
-												<li class="share">
-													<a class="toggle"><span class="text">Share <i class="fa fa-angle-right"></i></span></a>
-												</li>
-											</ul>
-										</div>
-										<!--end post-body-->
-									</div>
-									<!--end post-content-->
-								</div>
-								<!--end post_list-->
-							</form>
-							<div class="comment_bottom_block">
-								<ul>
-									<li><a href="#"><i class="fa fa-rss"></i> &nbsp; Comment feed</a></li>
-									<li><a href="#"><i class="fa fa-envelope-o"></i> &nbsp; Subscribe via email</a></li>
-								</ul>
-							</div>
-							<!--end comment_bottom_block-->
-						</div>
-						<!--end comment post-->
-						<div class="comments_form">
-							<h3>Post A Comment</h3>
-							<form action="#" method="post">
-								<div class="half">
-									<input type="text" class="form-control" placeholder="Name">
-								</div>
-								<div class="half right">
-									<input type="text" class="form-control" placeholder="Email">
-								</div>
-								<div class="full">
-									<textarea rows="9" cols="10" class="form-control" placeholder="Write a comment"></textarea>
-								</div>
-								<input type="submit" class="commonBtn" value="Submit">
-							</form>
-						</div>
-						<!--end comments form-->
-					</div>
-					<!--end comments section-->
 				</div>
 				<!--end post left section-->
 			</div>
@@ -256,7 +150,7 @@
 					<!-- end list_block -->
 					<div class="list_block">
 						<div class="upcoming_events">
-							<h3>Upcoming Events</h3>
+							<h3>Event Lainnya</h3>
 							<ul>
 								<li class="related_post_sec single_post">
 									<span class="date-wrapper">
