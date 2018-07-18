@@ -2,21 +2,23 @@
   <div class="menuFooter clearfix">
     <div class="container">
       <div class="row clearfix">
-        <div class="col-sm-3 col-xs-6">
+        <div class="col-sm-3 col-xs-6 footer-address">
+          <h5>Profile</h5>
           <ul class="menuLink">
-            <li><a href="about.html">About Royal College</a></li>
-            <li><a href="campus.html">About Campus</a></li>
-            <li><a href="stuff.html">Staff Members</a></li>
-            <li><a href="about.html">Why Choose Us?</a></li>
+            <li><a href="<?php echo base_url('Profile'); ?>">Sejarah</a></li>
+            <li><a href="#">Visi &amp; Misi</a></li>
+            <li><a href="#">Cabang</a></li>
+            <li><a href="#">Staff</a></li>
           </ul>
         </div>
         <!-- col-sm-3 col-xs-6 -->
-        <div class="col-sm-3 col-xs-6 borderLeft">
+        <div class="col-sm-3 col-xs-6 borderLeft footer-address">
+          <h5>Pendidikan:</h5>
           <ul class="menuLink">
-            <li><a href="course-fullwidth.html">All Courses</a></li>
-            <li><a href="buying-steps.html">Admission</a></li>
-            <li><a href="photo-gallery3col.html">Photo Gallery</a></li>
-            <li><a href="international_students.html">International Students</a></li>
+            <li><a href="<?php echo base_url('eucation/Kurikulum'); ?>">Kurikulum</a></li>
+            <li><a href="<?php echo base_url('education/prestasi'); ?>">Prestasi</a></li>
+            <li><a href="<?php echo base_url('education/akriditasi'); ?>">Akriditasi</a></li>
+            <li><a href="<?php echo base_url('education/program'); ?>">Program</a></li>
           </ul>
         </div>
         <!-- col-sm-3 col-xs-6 -->
@@ -24,11 +26,11 @@
           <div class="footer-address">
             <h5>Location:</h5>
             <address>
-              Royal College<br>
-              1727 Lombard St.<br>
-              San Francisco
+              Jl. Petojo Utara<br>
+              1727 Tanah Abang<br>
+              Jakarta Pusat
             </address>
-            <a href="contact-us.html"><span class="place"><i class="fa fa-map-marker"></i>Main Campus</span></a>
+            <a href="contact-us.html"><span class="place"><i class="fa fa-map-marker"></i>Kantor Pusat</span></a>
           </div>
         </div>
         <!-- col-sm-3 col-xs-6 -->
