@@ -62,7 +62,7 @@
     <div class="container">
       <div class="row clearfix">
         <div class="col-sm-6 col-xs-12 copyRight">
-          <p>© 2016 Copyright Royal College Bootstrap Template by <a href="http://www.iamabdus.com">Abdus</a></p>
+          <p>© <?php echo date("Y"); ?></p>
         </div>
         <!-- col-sm-6 col-xs-12 -->
         <!-- <div class="col-sm-6 col-xs-12 privacy_policy">

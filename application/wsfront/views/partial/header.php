@@ -60,19 +60,20 @@
                 <a class="navbar-brand logo clearfix" href="index.html"><img src="<?php echo base_url('assets/wsfront'); ?>/img/logo.png" alt="" class="img-responsive" /></a>
               </div>
               
+              <?php $uri = $this->uri->segment(1); ?>
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="main-nav">
                 <ul class="nav navbar-nav navbar-right">
-                  <li class="active">
+                  <li class="<?php echo ($uri == 'home') ? 'active' : ''; ?>">
                     <a href="<?php echo base_url('home'); ?>" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
                   </li>
-                  <li class="dropdown">
+                  <li class="dropdown <?php echo ($uri == 'profile') ? 'active' : ''; ?>">
                     <a href="<?php echo base_url('profile'); ?>" class="dropdown-toggle">PROFIL</a>
                     <ul class="dropdown-menu">
                       <!-- <li><a href="course-grid-3col.html">SEJARAH</a></li>
                       <li><a href="course-grid-3col.html">VISI &amp; MISI</a></li>
                       <li><a href="course-grid-4col.html">STRUKTUR ORGANISASI</a></li> -->
-                      <li class="dropdown">
+                      <li class="dropdown <?php echo ($uri == 'branch') ? 'active' : ''; ?>">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CABANG</a>
                         <ul class="dropdown-menu">
                           <li><a href="<?php echo base_url('branch'); ?>">JAKARTA</a></li>
@@ -81,7 +82,7 @@
                       </li>
                     </ul>
                   </li>
-                <li class="dropdown">
+                <li class="dropdown <?php echo ($uri == 'education') ? 'active' : ''; ?>">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PENDIDIKAN</a>
                   <ul class="dropdown-menu">
                     <li><a href="<?php echo base_url('education/program'); ?>">PROGRAM</a></li>
@@ -89,22 +90,22 @@
                     <li><a href="<?php echo base_url('education/prestasi'); ?>">PRESTASI</a></li>
                   </ul>
                 </li>
-                <li class="">
+                <li class="<?php echo ($uri == 'fasilitas') ? 'active' : ''; ?>">
                   <a href="<?php echo base_url('fasilitas'); ?>" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">FASILITAS</a>
                 </li>
-                <li class="dropdown">
+                <li class="dropdown <?php echo ($uri == 'news' | $uri == 'event') ? 'active' : ''; ?>">
                   <a href="<?php echo base_url('news'); ?>" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">BERITA</a>
                   <ul class="dropdown-menu">
                     <li><a href="<?php echo base_url('event'); ?>">EVENT</a></li>
                   </ul>
                 </li>
-                <li class="">
+                <li class="<?php echo ($uri == 'gallery') ? 'active' : ''; ?>">
                   <a href="<?php echo base_url('gallery'); ?>" class="dropdown-toggle"  role="button" aria-haspopup="true" aria-expanded="false">GALERI</a>
                 </li>
-                <li class="">
+                <li class="<?php echo ($uri == 'contact-us') ? 'active' : ''; ?>">
                   <a href="<?php echo base_url('contact-us'); ?>" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">HUBUNGI KAMI</a>
                 </li>
-                <li class="apply_now"><a href="<?php echo base_url('register'); ?>">Pendaftaran</a></li>
+                <!-- <li class="apply_now"><a href="<?php echo base_url('register'); ?>">Pendaftaran</a></li> -->
               </ul>
             </div>
             <!-- navbar-collapse -->
