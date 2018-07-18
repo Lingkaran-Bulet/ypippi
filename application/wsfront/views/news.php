@@ -29,10 +29,6 @@
 							<?php }?>
 						<?php }?>
 							
-							<ul class="pagination_section">
-								<li><a href="#">Older News</a></li>
-							</ul><!--end pagination section-->
-
 						</div><!--end post left section-->
 					</div>
 			<!--end post_left-->
