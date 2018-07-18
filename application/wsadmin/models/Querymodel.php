@@ -50,14 +50,14 @@ class Querymodel extends  CI_Model {
 				if(!empty($__image) && is_array($__image)){
 					foreach($__image as $key => $val){
 						if(!empty($val)){
-							@unlink($this->path_image['path_thumb_images'].$this->path_pict.$param['ws_article_id'].'/'.$val['image_path']);  
-							@unlink($this->path_image['path_thumb_images'].$this->path_pict.$param['ws_article_id'].'/thumb_'.$val['image_path']);
-							@unlink($this->path_image['path_thumb_images'].$this->path_pict.$param['ws_article_id'].'/zoom_'.$val['image_path']);
-							@unlink($this->path_image['path_thumb_images'].$this->path_pict.$param['ws_article_id'].'/zoom_xtra_'.$val['image_path']);
+							@unlink($this->path_image['path_thumb_images'].$this->path_pict.$expl[0].'/'.$val['image_path']);  
+							@unlink($this->path_image['path_thumb_images'].$this->path_pict.$expl[0].'/thumb_'.$val['image_path']);
+							@unlink($this->path_image['path_thumb_images'].$this->path_pict.$expl[0].'/zoom_'.$val['image_path']);
+							@unlink($this->path_image['path_thumb_images'].$this->path_pict.$expl[0].'/zoom_xtra_'.$val['image_path']);
 						}
 					}
 
-					rmdir($this->path_image['path_thumb_images'].$this->path_pict.$param['ws_article_id']);
+					rmdir($this->path_image['path_thumb_images'].$this->path_pict.$expl[0]);
 				}
 
 				$this->db->where($this->id, $expl[0]);

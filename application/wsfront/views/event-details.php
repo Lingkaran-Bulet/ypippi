@@ -16,6 +16,7 @@
 						<h1><?php echo $detail[0]['ws_event_title']; ?></h1>
 						<div class="post_desc"><?php echo $detail[0]['ws_event_desc']; ?></div>
 						<!--end post desc-->
+						<!--
 						<div class="post_bottom">
 							<ul>
 								<li class="like">
@@ -38,6 +39,7 @@
 								</li>
 							</ul>
 						</div>
+						-->
 						<!--end post bottom-->
 					</div>
 					<!--end post-->

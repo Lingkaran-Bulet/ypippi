@@ -48,7 +48,7 @@ if(!empty($err)){
                     </tr>
                 <?php $j++; } ?> 
                 <tr>
-                    <td colspan="4"></td>
+                    <td colspan="6"></td>
                     <td>
                         <center>
                             <button type="submit" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-trash"></i>&nbsp;Delete</button>
