@@ -9,9 +9,51 @@ class News extends CI_Controller {
 		//Do your magic here
 	}
 
+	public $table = 'ws_article_foo';
+	public $perpage = 10;
+
 	public function index()
 	{
-		$data['article'] = $this->Querymodel->getListArticle($limit=3, $start=0);
+		
+		$page = $this->uri->segment(3);
+		$offset = !empty($page) ? $this->perpage * ($page - 1) : 0;
+
+		$config['base_url'] = base_url('news/page');
+		$config['total_rows'] = $this->Querymodel->getCountAllrows($this->table);
+		$config['per_page'] = $this->perpage;
+		$config['first_url'] = '1';
+
+		$config['use_page_numbers'] = TRUE;
+		
+		$config['full_tag_open'] = '<div><ul class="pagination">';
+		$config['full_tag_close'] = '</ul></div>';
+		
+		$config['first_link'] = 'First';
+		$config['first_tag_open'] = '<li>';
+		$config['first_tag_close'] = '<li>';
+		
+		$config['last_link'] = 'Last';
+		$config['last_tag_open'] = '<li>';
+		$config['last_tag_close'] = '<li>';
+		
+		$config['next_link'] = '&gt;';
+		$config['next_tag_open'] = '<li>';
+		$config['next_tag_close'] = '<li>';
+		
+		$config['prev_link'] = '&lt;';
+		$config['prev_tag_open'] = '<li>';
+		$config['prev_tag_close'] = '<li>';
+		
+		$config['cur_tag_open'] = '<li class="active"><a href="javascrip::void();">';
+		$config['cur_tag_close'] = '</a></li>';
+		
+		$config['num_tag_open'] = '<li>';
+		$config['num_tag_close'] = '</li>';
+
+		$this->pagination->initialize($config);
+		$data['pagination'] = $this->pagination->create_links();
+
+		$data['article'] = $this->Querymodel->getListArticle($limit=$this->perpage, $start=$offset);
     	
     	$data['content'] = 'news';
 		$this->load->view('layout/default', $data);

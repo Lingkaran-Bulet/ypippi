@@ -29,9 +29,14 @@
             <?php }?>
           <?php }?>
           <!--end post-->
-          <ul class="pagination_section">
-            <li><a href="#">1</a></li>
-          </ul>
+          
+          <?php 
+              if(!empty($pagination)){
+                echo $pagination;
+              }else{
+                echo '<ul class="pagination"><li class="active"><a href="javascrip::void();">1</a></li></ul>';
+              }
+          ?>
           <!--end pagination section-->
         </div>
         <!--end post left section-->

@@ -67,6 +67,9 @@ $route['education/kurikulum'] = 'education/kurikulum';
 $route['education/akriditas'] = 'education/akriditas';
 $route['(news|event)/read/(.*)'] = 'detail/index/$1/$2';
 
+$route['news/page/(.*)'] = "news/index/page/$1";
+$route['event/page/(.*)'] = "event/index/page/$1";
+
 $arr = array('home', 'news', 'event');
 if(!in_array($this->uri->segment(1), $arr)) {
   $route[$this->uri->segment(1)] = 'welcome';

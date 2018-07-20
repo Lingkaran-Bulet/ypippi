@@ -9,6 +9,12 @@ class Querymodel extends  CI_Model {
 		$this->load->database();
     }
 	
+	function getCountAllrows($table)
+	{
+		$table = isset($table) ? $table : $this->table;
+		return $this->db->count_all($table);
+	}
+
     public function getListArticle($limit=10, $start=0){
     	
     	$result = array();
